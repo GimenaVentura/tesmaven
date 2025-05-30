@@ -1,25 +1,29 @@
+# Usa una imagen base de Jenkins
+FROM jenkins/jenkins:lts
 
-FROM maven:3.9.4-eclipse-temurin-17 AS builder
+# Configurar el usuario root para instalar herramientas
+USER root
 
-WORKDIR /app
+# Instalar JDK 17 y Maven 3.8.1
+RUN apt-get update && apt-get install -y \
+    openjdk-17-jdk \
+    maven \
+    && apt-get clean;
 
-# Copia los archivos necesarios
-COPY pom.xml ./
-COPY src ./src
+# Configurar el entorno JAVA_HOME y MAVEN_HOME
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+ENV MAVEN_HOME=/usr/share/maven
+ENV PATH="${MAVEN_HOME}/bin:${JAVA_HOME}/bin:${PATH}"
 
-# Empaqueta la app sin ejecutar tests (puedes quitar -DskipTests si deseas)
-RUN mvn clean package -DskipTests
+# Volver a Jenkins como usuario por defecto
+USER jenkins
 
-# Etapa 2: Imagen final de producción con JDK liviano
-FROM eclipse-temurin:17-jdk-alpine
+# Expone el puerto en el que Jenkins funciona
+EXPOSE 8080
 
-WORKDIR /app
+# Ejecutar Jenkins cuando se inicie el contenedor
+ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
-# Copia el jar desde el builder
-COPY --from=builder /app/target/*.jar app.jar
-
-# Expón el puerto (Render usará la variable PORT automáticamente)
-EXPOSE 8081
-
-# Ejecuta la app
-ENTRYPOINT ["java", "-jar", "app.jar"]
+#docker build -t jenkins-maven-jdk17 .
+#docker run -d -p 8080:8080 --name jenkins-maven-jdk17 jenkins-maven-jdk17
+#docker exec -it jenkins-maven-jdk17 cat /var/jenkins_home/secrets/initialAdminPassword

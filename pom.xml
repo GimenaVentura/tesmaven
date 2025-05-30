@@ -20,7 +20,7 @@
 	<description>microservicios de talleres</description>
 
 	<properties>
-	  <sonar.organization>GimenaVentura</sonar.organization>
+	  <sonar.organization>gimenaventura</sonar.organization>
 	  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	   <sonar.projectKey>GimenaVentura_tesmaven</sonar.projectKey>
 	</properties>

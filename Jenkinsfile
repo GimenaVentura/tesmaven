@@ -21,7 +21,7 @@ pipeline {
         stage('SonarCloud Analysis') {
             steps {
                 script {
-                    def branchName = env.BRANCH_NAME ?: 'workshop'
+                    def branchName = env.BRANCH_NAME ?: 'main'
                     sh """
                         mvn sonar:sonar \
                         -Dsonar.login=${SONAR_TOKEN} \

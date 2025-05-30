@@ -25,5 +25,4 @@ EXPOSE 8080
 ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
 #docker build -t jenkins-maven-jdk17 .
-#docker run -d -p 8080:8080 --name jenkins-maven-jdk17 jenkins-maven-jdk17
 

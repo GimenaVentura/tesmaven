@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WorkshopService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">workshop</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.workshop.service</a> &gt; <span class="el_source">WorkshopService.java</span></div><h1>WorkshopService.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.workshop.service;
+import org.springframework.stereotype.Service;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import pe.edu.vallegrande.workshop.dto.WorkshopKafkaEventDto;
+import pe.edu.vallegrande.workshop.model.Workshop;
+import pe.edu.vallegrande.workshop.repository.WorkshopRepository;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+@Service
+<span class="fc" id="L12">@Slf4j</span>
+@RequiredArgsConstructor
+public class WorkshopService {
+    private final WorkshopRepository workshopRepository;
+    private final KafkaProducerService kafkaProducerService;
+
+    public Flux&lt;Workshop&gt; findAllWorkshop() {
+<span class="fc" id="L19">        return workshopRepository.findAll();  </span>
+    }
+    
+    public Flux&lt;Workshop&gt; findStatus(String state){
+<span class="fc" id="L23">        return workshopRepository.findAllByState(state);</span>
+    }
+
+    public Flux&lt;Workshop&gt; getActivosByState(String state){
+<span class="fc" id="L27">        return workshopRepository.findAllByState(state);</span>
+    }
+
+    public Mono&lt;Void&gt; inactiveWorkshop(Long id) {
+<span class="fc" id="L31">        return workshopRepository.inactiveWorkshop(id);</span>
+    }
+
+    public Mono&lt;Workshop&gt; findById(Long id) {
+<span class="fc" id="L35">        return workshopRepository.findById(id);</span>
+    }
+
+    public Mono&lt;Workshop&gt; createWorkshop(Workshop workshop) {
+<span class="pc bpc" id="L39" title="3 of 4 branches missed.">        if (workshop.getState() == null || workshop.getState().isBlank()) {</span>
+<span class="fc" id="L40">            workshop.setState(&quot;A&quot;); // ✅ Valor por defecto</span>
+        }
+<span class="fc" id="L42">        return workshopRepository.save(workshop)</span>
+<span class="fc" id="L43">                .doOnNext(saved -&gt; kafkaProducerService.sendWorkshopEvent(toEventDto(saved)));</span>
+    }
+
+
+    public Mono&lt;Workshop&gt; updateWorkshop(Workshop workshop) {
+<span class="fc" id="L48">        return workshopRepository.save(workshop)</span>
+<span class="fc" id="L49">                .doOnNext(updated -&gt; kafkaProducerService.sendWorkshopEvent(toEventDto(updated)));</span>
+    }
+
+    public Mono&lt;Workshop&gt; save(Workshop workshop) {
+<span class="fc" id="L53">        return workshopRepository.save(workshop);</span>
+    }
+
+    public Mono&lt;Void&gt; deleteById(Long id) {
+<span class="fc" id="L57">        return workshopRepository.findById(id)</span>
+<span class="fc" id="L58">                .flatMap(workshop -&gt; {</span>
+<span class="fc" id="L59">                    kafkaProducerService.sendWorkshopEvent(toEventDto(workshop)); // Enviar antes de borrar</span>
+<span class="fc" id="L60">                    return workshopRepository.deleteById(id);</span>
+                });
+    }
+
+    public Mono&lt;Workshop&gt; restoreWorkshop(Long id) {
+<span class="fc" id="L65">        return workshopRepository.findById(id)</span>
+<span class="fc" id="L66">                .flatMap(workshop -&gt; {</span>
+<span class="fc bfc" id="L67" title="All 2 branches covered.">                    if (&quot;I&quot;.equals(workshop.getState())) {</span>
+<span class="fc" id="L68">                        workshop.setState(&quot;A&quot;);</span>
+<span class="fc" id="L69">                        return workshopRepository.save(workshop)</span>
+<span class="fc" id="L70">                                .doOnNext(updated -&gt; kafkaProducerService.sendWorkshopEvent(toEventDto(updated)));</span>
+                    }
+<span class="fc" id="L72">                    return Mono.just(workshop);</span>
+                });
+    }
+
+    public Mono&lt;Workshop&gt; logicalDelete(Long id) {
+<span class="fc" id="L77">        return workshopRepository.findById(id)</span>
+<span class="fc" id="L78">                .flatMap(workshop -&gt; {</span>
+<span class="fc" id="L79">                    workshop.setState(&quot;I&quot;);</span>
+<span class="fc" id="L80">                    return workshopRepository.save(workshop)</span>
+<span class="fc" id="L81">                            .doOnNext(updated -&gt; kafkaProducerService.sendWorkshopEvent(toEventDto(updated)));</span>
+                });
+    }
+
+    private WorkshopKafkaEventDto toEventDto(Workshop workshop) {
+<span class="fc" id="L86">        WorkshopKafkaEventDto dto = new WorkshopKafkaEventDto();</span>
+<span class="fc" id="L87">        dto.setId(workshop.getId());</span>
+<span class="fc" id="L88">        dto.setName(workshop.getName());</span>
+<span class="fc" id="L89">        dto.setDescription(workshop.getDescription());</span>
+<span class="fc" id="L90">        dto.setStartDate(workshop.getStartDate());</span>
+<span class="fc" id="L91">        dto.setEndDate(workshop.getEndDate());</span>
+<span class="fc" id="L92">        dto.setObservation(workshop.getObservation());</span>
+<span class="fc" id="L93">        dto.setState(workshop.getState());</span>
+<span class="fc" id="L94">        dto.setPersonId(workshop.getPersonId());</span>
+<span class="fc" id="L95">        return dto;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

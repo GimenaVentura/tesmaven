@@ -1,0 +1,8 @@
+pe/edu/vallegrande/workshop/service/KafkaProducerService.class
+pe/edu/vallegrande/workshop/model/Workshop.class
+pe/edu/vallegrande/workshop/WorkshopApplication.class
+pe/edu/vallegrande/workshop/service/WorkshopService.class
+pe/edu/vallegrande/workshop/config/SecurityConfig.class
+pe/edu/vallegrande/workshop/repository/WorkshopRepository.class
+pe/edu/vallegrande/workshop/dto/WorkshopKafkaEventDto.class
+pe/edu/vallegrande/workshop/controller/WorkshopController.class

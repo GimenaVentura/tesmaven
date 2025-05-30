@@ -1,0 +1,8 @@
+/workspace/Jenkis/src/main/java/pe/edu/vallegrande/workshop/WorkshopApplication.java
+/workspace/Jenkis/src/main/java/pe/edu/vallegrande/workshop/config/SecurityConfig.java
+/workspace/Jenkis/src/main/java/pe/edu/vallegrande/workshop/controller/WorkshopController.java
+/workspace/Jenkis/src/main/java/pe/edu/vallegrande/workshop/dto/WorkshopKafkaEventDto.java
+/workspace/Jenkis/src/main/java/pe/edu/vallegrande/workshop/model/Workshop.java
+/workspace/Jenkis/src/main/java/pe/edu/vallegrande/workshop/repository/WorkshopRepository.java
+/workspace/Jenkis/src/main/java/pe/edu/vallegrande/workshop/service/KafkaProducerService.java
+/workspace/Jenkis/src/main/java/pe/edu/vallegrande/workshop/service/WorkshopService.java

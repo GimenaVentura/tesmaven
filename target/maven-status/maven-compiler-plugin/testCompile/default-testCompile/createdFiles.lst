@@ -1,0 +1,5 @@
+pe/edu/vallegrande/workshop/config/DotenvInitializer.class
+pe/edu/vallegrande/workshop/service/WorkshopServiceTest.class
+pe/edu/vallegrande/workshop/WorkshopApplicationTests.class
+pe/edu/vallegrande/workshop/controller/WorkshopControllerTest.class
+pe/edu/vallegrande/workshop/config/TestSecurityConfig.class

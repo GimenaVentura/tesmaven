@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="2.285" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="PATH" value="/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/home/gitpod/.local/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/home/gitpod/.rvm/gems/ruby-3.2.8/bin:/home/gitpod/.rvm/gems/ruby-3.2.8@global/bin:/home/gitpod/.rvm/rubies/ruby-3.2.8/bin:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.yarn/bin:/home/gitpod/.pnpm:/home/gitpod/.pyenv/bin:/home/gitpod/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/home/gitpod/.local/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.rvm/bin"/>
+    <property name="PYENV_SHELL" value="bash"/>
+    <property name="NIX_VERSION" value="2.19.2"/>
+    <property name="IRBRC" value="/home/gitpod/.rvm/rubies/ruby-3.2.8/.irbrc"/>
+    <property name="PYENV_FAKEROOT" value="/workspace/.pyenv_mirror/fakeroot"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="SUPERVISOR_ADDR" value="localhost:22999"/>
+    <property name="NIX_PROFILES" value="/nix/var/nix/profiles/default /home/gitpod/.nix-profile"/>
+    <property name="GITPOD_WORKSPACE_URL" value="https://gimenaccoracquis-jenkis-oomsfa4hc32.ws-us120.gitpod.io"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="GITPOD_OWNER_ID" value="6e289233-46a0-4e0d-b47c-800dc00e17d8"/>
+    <property name="GITPOD_WORKSPACE_ID" value="gimenaccoracquis-jenkis-oomsfa4hc32"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="GITPOD_TASKS" value="[{&quot;init&quot;:&quot;./mvnw install -DskipTests=false&quot;}]"/>
+    <property name="COLORTERM" value="truecolor"/>
+    <property name="GITPOD_THEIA_PORT" value="23000"/>
+    <property name="GITPOD_DISABLE_JETBRAINS_LOCAL_PORT_FORWARDING" value="false"/>
+    <property name="SDKMAN_DIR" value="/home/gitpod/.sdkman"/>
+    <property name="NGINX_DOCROOT_IN_REPO" value="public"/>
+    <property name="rvm_version" value="1.29.12 (latest)"/>
+    <property name="VSCODE_GIT_ASKPASS_NODE" value="/ide/node"/>
+    <property name="PROMPT_COMMAND" value="__vsc_prompt_cmd_original"/>
+    <property name="TERM_PROGRAM_VERSION" value="1.100.2"/>
+    <property name="PWD" value="/workspace/Jenkis"/>
+    <property name="CARGO_HOME" value="/workspace/.cargo"/>
+    <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/17.0.9-tem/lib"/>
+    <property name="sun.java.command" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529202235606_3.jar /workspace/Jenkis/target/surefire 2025-05-29T20-22-35_490-jvmRun1 surefire-20250529202235606_1tmp surefire_0-20250529202235606_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="LESSOPEN" value="| /usr/bin/lesspipe %s"/>
+    <property name="SDKMAN_CANDIDATES_API" value="https://api.sdkman.io/2"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="PIPENV_VENV_IN_PROJECT" value="true"/>
+    <property name="MY_RUBY_HOME" value="/home/gitpod/.rvm/rubies/ruby-3.2.8"/>
+    <property name="VSX_REGISTRY_URL" value="https://open-vsx.gitpod.io"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/home/gitpod/.sdkman/candidates/java/17.0.9-tem"/>
+    <property name="rvm_path" value="/home/gitpod/.rvm"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/workspace/Jenkis"/>
+    <property name="PYENV_HOOK_PATH" value="/home/gitpod/.gp_pyenv.d"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="PYENV_INIT_LOCK" value="/tmp/.pyenv_init.lock"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="RUST_VERSION" value="1.86.0"/>
+    <property name="PIP_CACHE_DIR" value="/workspace/.pyenv_mirror/pip_cache"/>
+    <property name="GITPOD_WORKSPACE_CONTEXT_URL" value="https://github.com/GimenaCcoracQuispe/Jenkis/tree/workshop"/>
+    <property name="NIX_SSL_CERT_FILE" value="/etc/ssl/certs/ca-certificates.crt"/>
+    <property name="GITPOD_MEMORY" value="3328"/>
+    <property name="PYTHONUSERBASE" value="/workspace/.pyenv_mirror/user/current"/>
+    <property name="SHLVL" value="1"/>
+    <property name="GITPOD_GIT_USER_NAME" value="Gimena Ccoracc Quispe"/>
+    <property name="KAFKA_USERNAME" value="53QBHPHGWMCFCWXG"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+9"/>
+    <property name="JAVA_HOME" value="/home/gitpod/.sdkman/candidates/java/current"/>
+    <property name="user.name" value="gitpod"/>
+    <property name="GIT_EDITOR" value="/ide/bin/remote-cli/gitpod-code --wait"/>
+    <property name="TERM" value="xterm-256color"/>
+    <property name="GITPOD_ANALYTICS_SEGMENT_ENDPOINT" value="https://gitpod.io/analytics"/>
+    <property name="GRADLE_HOME" value="/home/gitpod/.sdkman/candidates/gradle/current"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="GRADLE_USER_HOME" value="/workspace/.gradle/"/>
+    <property name="GITPOD_CPU_COUNT" value="1"/>
+    <property name="JAVA_TOOL_OPTIONS" value="-XX:+UseContainerSupport -XX:ActiveProcessorCount=1"/>
+    <property name="VSCODE_IPC_HOOK_CLI" value="/tmp/vscode-ipc-72dec94f-af2b-4846-8ef3-e7fe6d790d3e.sock"/>
+    <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
+    <property name="localRepository" value="/workspace/m2-repository"/>
+    <property name="_" value="/home/gitpod/.sdkman/candidates/maven/current/bin/mvn"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="TERM_PROGRAM" value="vscode"/>
+    <property name="THEIA_RATELIMIT_LOG" value="50"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="64173"/>
+    <property name="PYENV_MIRROR" value="/workspace/.pyenv_mirror"/>
+    <property name="MAVEN_PROJECTBASEDIR" value="/workspace/Jenkis"/>
+    <property name="GOROOT" value="/home/gitpod/go"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="GITPOD_INSTANCE_ID" value="c9edca2f-83bc-4c2e-affe-28e9b96d2690"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="GEM_PATH" value="/home/gitpod/.rvm/gems/ruby-3.2.8:/home/gitpod/.rvm/gems/ruby-3.2.8@global"/>
+    <property name="THEIA_MINI_BROWSER_HOST_PATTERN" value="browser-{{hostname}}"/>
+    <property name="GITPOD_DEFAULT_WORKSPACE_IMAGE" value="gitpod/workspace-full:latest"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="GITPOD_SSH_CA_PUBLIC_KEY" value="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMQPGLZ5GCM03ISbMVdPZE9YO3KjbXcaxpdcUNPRNnbJ Gitpod-CA"/>
+    <property name="WORKSPACEKIT_WRAP_NETNS" value="true"/>
+    <property name="DB_PASSWORD" value="npg_1sQejrO2hupA"/>
+    <property name="XDG_DATA_DIRS" value="/usr/local/share:/usr/share:/home/gitpod/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/gitpod/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/gitpod/.nix-profile/share:/nix/var/nix/profiles/default/share"/>
+    <property name="java.class.path" value="/workspace/Jenkis/target/test-classes:/workspace/Jenkis/target/classes:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-data-r2dbc/3.4.4/spring-boot-starter-data-r2dbc-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar:/workspace/m2-repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/workspace/m2-repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/workspace/m2-repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/workspace/m2-repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/workspace/m2-repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/workspace/m2-repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/workspace/m2-repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/workspace/m2-repository/org/springframework/data/spring-data-r2dbc/3.4.4/spring-data-r2dbc-3.4.4.jar:/workspace/m2-repository/org/springframework/data/spring-data-relational/3.4.4/spring-data-relational-3.4.4.jar:/workspace/m2-repository/org/springframework/data/spring-data-commons/3.4.4/spring-data-commons-3.4.4.jar:/workspace/m2-repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-jdbc/6.2.5/spring-jdbc-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-r2dbc/6.2.5/spring-r2dbc-6.2.5.jar:/workspace/m2-repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/workspace/m2-repository/io/r2dbc/r2dbc-spi/1.0.0.RELEASE/r2dbc-spi-1.0.0.RELEASE.jar:/workspace/m2-repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/workspace/m2-repository/io/r2dbc/r2dbc-pool/1.0.2.RELEASE/r2dbc-pool-1.0.2.RELEASE.jar:/workspace/m2-repository/io/projectreactor/addons/reactor-pool/1.1.2/reactor-pool-1.1.2.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-webflux/3.4.4/spring-boot-starter-webflux-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-json/3.4.4/spring-boot-starter-json-3.4.4.jar:/workspace/m2-repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar:/workspace/m2-repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar:/workspace/m2-repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.3/jackson-module-parameter-names-2.18.3.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.4.4/spring-boot-starter-reactor-netty-3.4.4.jar:/workspace/m2-repository/io/projectreactor/netty/reactor-netty-http/1.2.4/reactor-netty-http-1.2.4.jar:/workspace/m2-repository/io/netty/netty-codec-http/4.1.119.Final/netty-codec-http-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-codec-http2/4.1.119.Final/netty-codec-http2-4.1.119.Final.jar:/workspace/m2-repository/org/springframework/spring-web/6.2.5/spring-web-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-webflux/6.2.5/spring-webflux-6.2.5.jar:/workspace/m2-repository/org/springframework/kafka/spring-kafka/3.3.4/spring-kafka-3.3.4.jar:/workspace/m2-repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-messaging/6.2.5/spring-messaging-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar:/workspace/m2-repository/org/springframework/retry/spring-retry/2.0.11/spring-retry-2.0.11.jar:/workspace/m2-repository/org/apache/kafka/kafka-clients/3.8.1/kafka-clients-3.8.1.jar:/workspace/m2-repository/com/github/luben/zstd-jni/1.5.6-4/zstd-jni-1.5.6-4.jar:/workspace/m2-repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/workspace/m2-repository/org/xerial/snappy/snappy-java/1.1.10.5/snappy-java-1.1.10.5.jar:/workspace/m2-repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar:/workspace/m2-repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar:/workspace/m2-repository/org/postgresql/postgresql/42.7.5/postgresql-42.7.5.jar:/workspace/m2-repository/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar:/workspace/m2-repository/org/postgresql/r2dbc-postgresql/1.0.7.RELEASE/r2dbc-postgresql-1.0.7.RELEASE.jar:/workspace/m2-repository/com/ongres/scram/client/2.1/client-2.1.jar:/workspace/m2-repository/com/ongres/scram/common/2.1/common-2.1.jar:/workspace/m2-repository/com/ongres/stringprep/saslprep/1.1/saslprep-1.1.jar:/workspace/m2-repository/com/ongres/stringprep/stringprep/1.1/stringprep-1.1.jar:/workspace/m2-repository/io/projectreactor/reactor-core/3.7.4/reactor-core-3.7.4.jar:/workspace/m2-repository/io/projectreactor/netty/reactor-netty-core/1.2.4/reactor-netty-core-1.2.4.jar:/workspace/m2-repository/io/netty/netty-handler/4.1.119.Final/netty-handler-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-common/4.1.119.Final/netty-common-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-resolver/4.1.119.Final/netty-resolver-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-buffer/4.1.119.Final/netty-buffer-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-transport/4.1.119.Final/netty-transport-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-unix-common/4.1.119.Final/netty-transport-native-unix-common-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-codec/4.1.119.Final/netty-codec-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-handler-proxy/4.1.119.Final/netty-handler-proxy-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-codec-socks/4.1.119.Final/netty-codec-socks-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-resolver-dns/4.1.119.Final/netty-resolver-dns-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-codec-dns/4.1.119.Final/netty-codec-dns-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-resolver-dns-native-macos/4.1.119.Final/netty-resolver-dns-native-macos-4.1.119.Final-osx-x86_64.jar:/workspace/m2-repository/io/netty/netty-resolver-dns-classes-macos/4.1.119.Final/netty-resolver-dns-classes-macos-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-epoll/4.1.119.Final/netty-transport-native-epoll-4.1.119.Final-linux-x86_64.jar:/workspace/m2-repository/io/netty/netty-transport-classes-epoll/4.1.119.Final/netty-transport-classes-epoll-4.1.119.Final.jar:/workspace/m2-repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-test/3.4.4/spring-boot-starter-test-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-test/3.4.4/spring-boot-test-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.4/spring-boot-test-autoconfigure-3.4.4.jar:/workspace/m2-repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/workspace/m2-repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/workspace/m2-repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/workspace/m2-repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/workspace/m2-repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/workspace/m2-repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/workspace/m2-repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/workspace/m2-repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/workspace/m2-repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/workspace/m2-repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/workspace/m2-repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/workspace/m2-repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-test/6.2.5/spring-test-6.2.5.jar:/workspace/m2-repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/workspace/m2-repository/io/projectreactor/reactor-test/3.7.4/reactor-test-3.7.4.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/workspace/m2-repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/workspace/m2-repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/workspace/m2-repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/workspace/m2-repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/workspace/m2-repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/workspace/m2-repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/workspace/m2-repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/workspace/m2-repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/workspace/m2-repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-security/3.4.4/spring-boot-starter-security-3.4.4.jar:/workspace/m2-repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar:/workspace/m2-repository/org/springframework/security/spring-security-config/6.4.4/spring-security-config-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-oauth2-resource-server/6.4.4/spring-security-oauth2-resource-server-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-core/6.4.4/spring-security-core-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-crypto/6.4.4/spring-security-crypto-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-oauth2-core/6.4.4/spring-security-oauth2-core-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-oauth2-jose/6.4.4/spring-security-oauth2-jose-6.4.4.jar:/workspace/m2-repository/com/nimbusds/nimbus-jose-jwt/9.37.3/nimbus-jose-jwt-9.37.3.jar:/workspace/m2-repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/workspace/m2-repository/io/github/cdimascio/dotenv-java/3.0.0/dotenv-java-3.0.0.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="NODE_VERSION" value="22.15.0"/>
+    <property name="VSCODE_GIT_IPC_HANDLE" value="/tmp/vscode-git-1fd0055acf.sock"/>
+    <property name="PNPM_HOME" value="/home/gitpod/.pnpm"/>
+    <property name="KAFKA_BOOTSTRAP_SERVERS" value="pkc-921jm.us-east-2.aws.confluent.cloud:9092"/>
+    <property name="MAVEN_HOME" value="/home/gitpod/.sdkman/candidates/maven/current"/>
+    <property name="DB_USERNAME" value="db_prs1_owner"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="GITPOD_CODE_HOST" value="gitpod.io"/>
+    <property name="GITPOD_REPO_ROOTS" value="/workspace/Jenkis"/>
+    <property name="GITPOD_HOST" value="https://gitpod.io"/>
+    <property name="RUSTUP_HOME" value="/home/gitpod/.rustup"/>
+    <property name="GITPOD_IS_SET_JAVA_XMX" value="false"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="os.name" value="Linux"/>
+    <property name="GITPOD_CONFIGCAT_ENABLED" value="true"/>
+    <property name="GIT_ASKPASS" value="/ide/extensions/git/dist/askpass.sh"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="INFOPATH" value=":/home/linuxbrew/.linuxbrew/share/info"/>
+    <property name="GITPOD_IS_SET_JAVA_PROCESSOR_COUNT" value="true"/>
+    <property name="surefire.test.class.path" value="/workspace/Jenkis/target/test-classes:/workspace/Jenkis/target/classes:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-data-r2dbc/3.4.4/spring-boot-starter-data-r2dbc-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar:/workspace/m2-repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/workspace/m2-repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/workspace/m2-repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/workspace/m2-repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/workspace/m2-repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/workspace/m2-repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/workspace/m2-repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/workspace/m2-repository/org/springframework/data/spring-data-r2dbc/3.4.4/spring-data-r2dbc-3.4.4.jar:/workspace/m2-repository/org/springframework/data/spring-data-relational/3.4.4/spring-data-relational-3.4.4.jar:/workspace/m2-repository/org/springframework/data/spring-data-commons/3.4.4/spring-data-commons-3.4.4.jar:/workspace/m2-repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-jdbc/6.2.5/spring-jdbc-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-r2dbc/6.2.5/spring-r2dbc-6.2.5.jar:/workspace/m2-repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/workspace/m2-repository/io/r2dbc/r2dbc-spi/1.0.0.RELEASE/r2dbc-spi-1.0.0.RELEASE.jar:/workspace/m2-repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/workspace/m2-repository/io/r2dbc/r2dbc-pool/1.0.2.RELEASE/r2dbc-pool-1.0.2.RELEASE.jar:/workspace/m2-repository/io/projectreactor/addons/reactor-pool/1.1.2/reactor-pool-1.1.2.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-webflux/3.4.4/spring-boot-starter-webflux-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-json/3.4.4/spring-boot-starter-json-3.4.4.jar:/workspace/m2-repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar:/workspace/m2-repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar:/workspace/m2-repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.3/jackson-module-parameter-names-2.18.3.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.4.4/spring-boot-starter-reactor-netty-3.4.4.jar:/workspace/m2-repository/io/projectreactor/netty/reactor-netty-http/1.2.4/reactor-netty-http-1.2.4.jar:/workspace/m2-repository/io/netty/netty-codec-http/4.1.119.Final/netty-codec-http-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-codec-http2/4.1.119.Final/netty-codec-http2-4.1.119.Final.jar:/workspace/m2-repository/org/springframework/spring-web/6.2.5/spring-web-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-webflux/6.2.5/spring-webflux-6.2.5.jar:/workspace/m2-repository/org/springframework/kafka/spring-kafka/3.3.4/spring-kafka-3.3.4.jar:/workspace/m2-repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-messaging/6.2.5/spring-messaging-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar:/workspace/m2-repository/org/springframework/retry/spring-retry/2.0.11/spring-retry-2.0.11.jar:/workspace/m2-repository/org/apache/kafka/kafka-clients/3.8.1/kafka-clients-3.8.1.jar:/workspace/m2-repository/com/github/luben/zstd-jni/1.5.6-4/zstd-jni-1.5.6-4.jar:/workspace/m2-repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/workspace/m2-repository/org/xerial/snappy/snappy-java/1.1.10.5/snappy-java-1.1.10.5.jar:/workspace/m2-repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar:/workspace/m2-repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar:/workspace/m2-repository/org/postgresql/postgresql/42.7.5/postgresql-42.7.5.jar:/workspace/m2-repository/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar:/workspace/m2-repository/org/postgresql/r2dbc-postgresql/1.0.7.RELEASE/r2dbc-postgresql-1.0.7.RELEASE.jar:/workspace/m2-repository/com/ongres/scram/client/2.1/client-2.1.jar:/workspace/m2-repository/com/ongres/scram/common/2.1/common-2.1.jar:/workspace/m2-repository/com/ongres/stringprep/saslprep/1.1/saslprep-1.1.jar:/workspace/m2-repository/com/ongres/stringprep/stringprep/1.1/stringprep-1.1.jar:/workspace/m2-repository/io/projectreactor/reactor-core/3.7.4/reactor-core-3.7.4.jar:/workspace/m2-repository/io/projectreactor/netty/reactor-netty-core/1.2.4/reactor-netty-core-1.2.4.jar:/workspace/m2-repository/io/netty/netty-handler/4.1.119.Final/netty-handler-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-common/4.1.119.Final/netty-common-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-resolver/4.1.119.Final/netty-resolver-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-buffer/4.1.119.Final/netty-buffer-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-transport/4.1.119.Final/netty-transport-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-unix-common/4.1.119.Final/netty-transport-native-unix-common-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-codec/4.1.119.Final/netty-codec-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-handler-proxy/4.1.119.Final/netty-handler-proxy-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-codec-socks/4.1.119.Final/netty-codec-socks-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-resolver-dns/4.1.119.Final/netty-resolver-dns-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-codec-dns/4.1.119.Final/netty-codec-dns-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-resolver-dns-native-macos/4.1.119.Final/netty-resolver-dns-native-macos-4.1.119.Final-osx-x86_64.jar:/workspace/m2-repository/io/netty/netty-resolver-dns-classes-macos/4.1.119.Final/netty-resolver-dns-classes-macos-4.1.119.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-epoll/4.1.119.Final/netty-transport-native-epoll-4.1.119.Final-linux-x86_64.jar:/workspace/m2-repository/io/netty/netty-transport-classes-epoll/4.1.119.Final/netty-transport-classes-epoll-4.1.119.Final.jar:/workspace/m2-repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-test/3.4.4/spring-boot-starter-test-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-test/3.4.4/spring-boot-test-3.4.4.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.4/spring-boot-test-autoconfigure-3.4.4.jar:/workspace/m2-repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/workspace/m2-repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/workspace/m2-repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/workspace/m2-repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/workspace/m2-repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/workspace/m2-repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/workspace/m2-repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/workspace/m2-repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/workspace/m2-repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/workspace/m2-repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/workspace/m2-repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/workspace/m2-repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar:/workspace/m2-repository/org/springframework/spring-test/6.2.5/spring-test-6.2.5.jar:/workspace/m2-repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/workspace/m2-repository/io/projectreactor/reactor-test/3.7.4/reactor-test-3.7.4.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/workspace/m2-repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/workspace/m2-repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/workspace/m2-repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/workspace/m2-repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/workspace/m2-repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/workspace/m2-repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/workspace/m2-repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/workspace/m2-repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/workspace/m2-repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/workspace/m2-repository/org/springframework/boot/spring-boot-starter-security/3.4.4/spring-boot-starter-security-3.4.4.jar:/workspace/m2-repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar:/workspace/m2-repository/org/springframework/security/spring-security-config/6.4.4/spring-security-config-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-web/6.4.4/spring-security-web-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-oauth2-resource-server/6.4.4/spring-security-oauth2-resource-server-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-core/6.4.4/spring-security-core-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-crypto/6.4.4/spring-security-crypto-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-oauth2-core/6.4.4/spring-security-oauth2-core-6.4.4.jar:/workspace/m2-repository/org/springframework/security/spring-security-oauth2-jose/6.4.4/spring-security-oauth2-jose-6.4.4.jar:/workspace/m2-repository/com/nimbusds/nimbus-jose-jwt/9.37.3/nimbus-jose-jwt-9.37.3.jar:/workspace/m2-repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/workspace/m2-repository/io/github/cdimascio/dotenv-java/3.0.0/dotenv-java-3.0.0.jar:"/>
+    <property name="PORT" value="8081"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/gitpod"/>
+    <property name="APACHE_DOCROOT_IN_REPO" value="public"/>
+    <property name="user.language" value="en"/>
+    <property name="GP_OPEN_EDITOR" value="/ide/bin/remote-cli/gitpod-code"/>
+    <property name="GITPOD_PREVENT_METADATA_ACCESS" value="true"/>
+    <property name="PYENV_ROOT" value="/home/gitpod/.pyenv"/>
+    <property name="OLDPWD" value="/workspace/Jenkis"/>
+    <property name="GITPOD_ANALYTICS_WRITER" value="segment"/>
+    <property name="GOPATH" value="/workspace/go"/>
+    <property name="GEM_HOME" value="/home/gitpod/.rvm/gems/ruby-3.2.8"/>
+    <property name="VISUAL" value="/ide/bin/remote-cli/gitpod-code"/>
+    <property name="THEIA_WEBVIEW_EXTERNAL_ENDPOINT" value="webview-{{hostname}}"/>
+    <property name="GO_VERSION" value="1.24.3"/>
+    <property name="GP_EXTERNAL_BROWSER" value="/ide/bin/remote-cli/gitpod-code --openExternal"/>
+    <property name="RUBY_VERSION" value="ruby-3.2.8"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="KAFKA_PASSWORD" value="tXwcS2Hk15Q2wFmIHg6CXeZF3i9KpC2H75ioGr/v7SZLbnvTbiUcy68I1T8p2n3A"/>
+    <property name="GITPOD_COMMIT_ANNOTATION_ENABLED" value="false"/>
+    <property name="GITPOD_WORKSPACE_CLASS" value="g1-standard"/>
+    <property name="LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"/>
+    <property name="surefire.real.class.path" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529202235606_3.jar"/>
+    <property name="HISTFILE" value="/workspace/.gitpod/.shell_history"/>
+    <property name="LESSCLOSE" value="/usr/bin/lesspipe %s %s"/>
+    <property name="BROWSER" value="/ide/bin/helpers/browser.sh"/>
+    <property name="MANPATH" value="/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man"/>
+    <property name="rvm_bin_path" value="/home/gitpod/.rvm/bin"/>
+    <property name="PYTHONUSERBASE_VERSION_FILE" value="/workspace/.pyenv_mirror/user/.mounted_version"/>
+    <property name="path.separator" value=":"/>
+    <property name="GITPOD_REPO_ROOT" value="/workspace/Jenkis"/>
+    <property name="CARGO_INSTALL_ROOT" value="/home/gitpod/.cargo"/>
+    <property name="rvm_prefix" value="/home/gitpod"/>
+    <property name="LANG" value="en_US.UTF-8"/>
+    <property name="GITPOD_WORKSPACE_CLASS_INFO" value="{&quot;id&quot;:&quot;g1-standard&quot;,&quot;category&quot;:&quot;GENERAL PURPOSE&quot;,&quot;displayName&quot;:&quot;Standard&quot;,&quot;description&quot;:&quot;Up to 4 cores, 8GB RAM, 30GB storage&quot;,&quot;powerups&quot;:1,&quot;isDefault&quot;:true,&quot;deprecated&quot;:false}"/>
+    <property name="os.version" value="6.1.139-0601139-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="VSCODE_GIT_ASKPASS_MAIN" value="/ide/extensions/git/dist/askpass-main.js"/>
+    <property name="GITPOD_WORKSPACE_CLUSTER_HOST" value="ws-us120.gitpod.io"/>
+    <property name="DB_URL" value="r2dbc:postgresql://ep-odd-sun-a56iuqcm-pooler.us-east-2.aws.neon.tech/db_prs1?sslmode=require"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="VSCODE_GIT_ASKPASS_EXTRA_ARGS" value=""/>
+    <property name="GITPOD_WORKSPACE_CONTEXT" value="{&quot;ref&quot;:&quot;workshop&quot;,&quot;refType&quot;:&quot;branch&quot;,&quot;isFile&quot;:false,&quot;path&quot;:&quot;&quot;,&quot;title&quot;:&quot;GimenaCcoracQuispe/Jenkis - workshop&quot;,&quot;revision&quot;:&quot;95c097a985c1fb3b0d1599e27f154e3afbf12c26&quot;,&quot;repository&quot;:{&quot;cloneUrl&quot;:&quot;https://github.com/GimenaCcoracQuispe/Jenkis.git&quot;,&quot;host&quot;:&quot;github.com&quot;,&quot;defaultBranch&quot;:&quot;main&quot;,&quot;name&quot;:&quot;Jenkis&quot;,&quot;owner&quot;:&quot;GimenaCcoracQuispe&quot;,&quot;private&quot;:false},&quot;normalizedContextURL&quot;:&quot;https://github.com/GimenaCcoracQuispe/Jenkis/tree/workshop&quot;,&quot;checkoutLocation&quot;:&quot;Jenkis&quot;,&quot;warnings&quot;:[],&quot;additionalFiles&quot;:{&quot;.gitpod.yml&quot;:&quot;# This configuration file was automatically generated by Gitpod.\n# Please adjust to your needs (see https://www.gitpod.io/docs/introduction/learn-gitpod/gitpod-yaml)\n# and commit this file to your remote git repository to share the goodness with others.\n\n# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart\n\ntasks:\n  - init: ./mvnw install -DskipTests=false\n\n\n&quot;}}"/>
+    <property name="MAVEN_CMD_LINE_ARGS" value=" clean verify"/>
+    <property name="SDKMAN_CANDIDATES_DIR" value="/home/gitpod/.sdkman/candidates"/>
+    <property name="PYCHARM_PYTHON_PATH" value="/home/gitpod/.pyenv/shims/python"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="POETRY_CACHE_DIR" value="/workspace/.pyenv_mirror/poetry"/>
+    <property name="NVM_DIR" value="/home/gitpod/.nvm"/>
+    <property name="user.dir" value="/workspace/Jenkis"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="HOMEBREW_NO_AUTO_UPDATE" value="1"/>
+    <property name="GITPOD_IDE_ALIAS" value="code"/>
+    <property name="GITPOD_INTERVAL" value="30000"/>
+    <property name="SDKMAN_PLATFORM" value="linuxx64"/>
+    <property name="USER" value="gitpod"/>
+    <property name="THEIA_WORKSPACE_ROOT" value="/workspace/Jenkis"/>
+    <property name="TRIGGER_REBUILD" value="2"/>
+    <property name="EDITOR" value="/ide/bin/remote-cli/gitpod-code"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="HOSTNAME" value="gimenaccoracquis-jenkis-oomsfa4hc32"/>
+    <property name="java.vm.version" value="17.0.9+9"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="GITPOD_GIT_USER_EMAIL" value="gimena.ccorac@vallegrande.edu.pe"/>
+    <property name="GP_PREVIEW_BROWSER" value="/ide/bin/remote-cli/gitpod-code --preview"/>
+    <property name="HOME" value="/home/gitpod"/>
+  </properties>
+  <testcase name="testDeactivateWorkshop_NotFound" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.766">
+    <system-out><![CDATA[2025-05-29T20:22:42.058Z  INFO 64173 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pe.edu.vallegrande.workshop.controller.WorkshopControllerTest]: WorkshopControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-29T20:22:42.086Z  INFO 64173 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pe.edu.vallegrande.workshop.WorkshopApplication for test class pe.edu.vallegrande.workshop.controller.WorkshopControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-05-29T20:22:42.130Z  INFO 64173 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Starting WorkshopControllerTest using Java 17.0.9 with PID 64173 (started by gitpod in /workspace/Jenkis)
+2025-05-29T20:22:42.130Z  INFO 64173 --- [           main] p.e.v.w.c.WorkshopControllerTest         : The following 1 profile is active: "test"
+2025-05-29T20:22:42.869Z  INFO 64173 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Started WorkshopControllerTest in 0.78 seconds (process running for 7.129)
+2025-05-29T20:22:43.435Z ERROR 64173 --- [     parallel-1] a.w.r.e.AbstractErrorWebExceptionHandler : [61d96869]  500 Server Error for HTTP DELETE "/api/workshops/deactive/1"
+
+java.lang.RuntimeException: Not found
+	at pe.edu.vallegrande.workshop.controller.WorkshopControllerTest.testDeactivateWorkshop_NotFound(WorkshopControllerTest.java:212) ~[test-classes/:na]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Handler pe.edu.vallegrande.workshop.controller.WorkshopController#deactivateWorkshop(Long) [DispatcherHandler]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP DELETE "/api/workshops/deactive/1" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at pe.edu.vallegrande.workshop.controller.WorkshopControllerTest.testDeactivateWorkshop_NotFound(WorkshopControllerTest.java:212) ~[test-classes/:na]
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+		at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.4.jar:1.11.4]
+		at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+		at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+		at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.2.jar:3.5.2]
+
+]]></system-out>
+  </testcase>
+  <testcase name="testGetActiveWorkshops" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.331"/>
+  <testcase name="testCreateWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.219"/>
+  <testcase name="testUpdateWorkshop_NotFound" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.014"/>
+  <testcase name="testActivateWorkshop_Success" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.011"/>
+  <testcase name="testGetWorkshopById" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.01"/>
+  <testcase name="testGetWorkshopList" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.026">
+    <system-out><![CDATA[2025-05-29T20:22:44.250Z  INFO 64173 --- [     parallel-1] p.e.v.w.controller.WorkshopController    : Workshop data: Workshop(id=1, name=Curso de Java, description=Aprende Java desde cero, startDate=2025-05-01, endDate=2025-05-31, observation=Incluye proyectos, state=A, personId=2,10,11,19,18,17,25,24)
+]]></system-out>
+  </testcase>
+  <testcase name="testActivateWorkshop_NotFound" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.011"/>
+  <testcase name="testDeleteWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.01"/>
+  <testcase name="testGetInactiveWorkshops" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.011"/>
+  <testcase name="testDeactivateWorkshop_Success" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.008"/>
+  <testcase name="testUpdateWorkshop_Success" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.014"/>
+</testsuite>

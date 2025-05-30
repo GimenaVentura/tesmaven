@@ -1,0 +1,5 @@
+/workspace/Jenkis/src/test/java/pe/edu/vallegrande/workshop/WorkshopApplicationTests.java
+/workspace/Jenkis/src/test/java/pe/edu/vallegrande/workshop/config/DotenvInitializer.java
+/workspace/Jenkis/src/test/java/pe/edu/vallegrande/workshop/config/TestSecurityConfig.java
+/workspace/Jenkis/src/test/java/pe/edu/vallegrande/workshop/controller/WorkshopControllerTest.java
+/workspace/Jenkis/src/test/java/pe/edu/vallegrande/workshop/service/WorkshopServiceTest.java

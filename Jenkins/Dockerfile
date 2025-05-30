@@ -24,5 +24,3 @@ EXPOSE 8080
 # Ejecutar Jenkins cuando se inicie el contenedor
 ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
-#docker build -t jenkins-maven-jdk17 .
-

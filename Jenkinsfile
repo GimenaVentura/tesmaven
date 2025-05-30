@@ -25,7 +25,7 @@ pipeline {
                     sh """
                         mvn sonar:sonar \
                         -Dsonar.login=${SONAR_TOKEN} \
-                        -Dsonar.projectKey=GimenaCcoracQuispe_Jenkis \
+                        -Dsonar.projectKey=GimenaVentura_tesmaven \
                         -Dsonar.branch.name=${branchName}
                     """
                 }

@@ -16,6 +16,11 @@ pipeline {
             steps {
                 sh 'mvn test'
             }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
         }
 
         stage('SonarCloud Analysis') {
@@ -46,7 +51,8 @@ pipeline {
             }
         }
     }
-     post {
+
+    post {
         success {
             echo "Pipeline ejecutado correctamente."
         }
